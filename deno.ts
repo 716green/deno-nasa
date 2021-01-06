@@ -1,4 +1,5 @@
 const food = Deno.args[0]
+// deno run deno.ts 'pterodactyl eggs'
 
 const features: string[] = ['secure', 'modular', "typescript compatible"]
 const runtime: string = "Deno"
@@ -7,7 +8,7 @@ console.log(welcome)
 
 
 if (food) {
-  console.log('🦕...Deno is born!')
+  console.log(`🦕...Deno ate ${food} and is born!`)
 } else {
   console.log('🥚 ...the egg needs more love')
 }
