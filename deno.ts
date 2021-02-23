@@ -12,3 +12,9 @@ if (food) {
 } else {
   console.log('🥚 ...the egg needs more love')
 }
+
+
+setTimeout(() => {
+  console.log("Check")
+  console.table(Deno.metrics())
+}, 1000);
